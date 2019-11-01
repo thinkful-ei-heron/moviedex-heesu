@@ -6,7 +6,7 @@ const helmet = require('helmet');
 
 const app = express();
 
-const store = require('./movies-data-small');
+const store = require('./store');
 const API_TOKEN = process.env.API_TOKEN;
 const morganSetting = process.env.NODE_ENV === 'production' ? 'tiny' : 'common';
 
